@@ -6,21 +6,7 @@ class Player
 public: 
 	Player();
 	~Player();
-	
-	int getHealth();
-	int getAgility();
-	int getStrength();
-	int getKeyAmount();
-	int getMoney();
-	int getDefense();
 
-	void setHealth(int healthIn);
-	void setAgility(int agilityIn);
-	void setStrength(int strengthIn);
-	void setKeyAmount(int keyAmountIn);
-	void setMoney(int moneyIn);
-	void setDefense(int defenseIn);
-	
 
 private:
 	int health;
