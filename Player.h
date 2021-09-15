@@ -14,6 +14,14 @@ public:
 	int getMoney();
 	int getDefense();
 
+	void setHealth(int healthIn);
+	void setAgility(int agilityIn);
+	void setStrength(int strengthIn);
+	void setKeyAmount(int keyAmountIn);
+	void setMoney(int moneyIn);
+	void setDefense(int defenseIn);
+	
+
 private:
 	int health;
 	string backpackInventory[4];

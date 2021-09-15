@@ -18,7 +18,7 @@ Player::~Player()
 
 }
 
-// functions to get stats
+// functions to get values
 int Player::getHealth() 
 {
 	return health;
@@ -47,4 +47,36 @@ int Player::getKeyAmount()
 int Player::getDefense()
 {
 	return defense;
+}
+
+// functions to set value
+
+void Player::setHealth(int healthIn)
+{
+	health = healthIn;
+}
+
+void Player::setAgility(int agilityIn)
+{
+	agility = agilityIn;
+}
+
+void Player::setStrength(int strengthIn)
+{
+	strength = strengthIn;
+}
+
+void Player::setKeyAmount(int keyAmountIn)
+{
+	keyAmount = keyAmountIn;
+}
+
+void Player::setMoney(int moneyIn)
+{
+	money = moneyIn;
+}
+
+void Player::setDefense(int defenseIn)
+{
+	defense = defenseIn;
 }
