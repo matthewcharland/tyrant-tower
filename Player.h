@@ -15,6 +15,7 @@ private:
 	int strength;
 	int keyAmount;
 	int money;
+	int defense;
 };
 
 
