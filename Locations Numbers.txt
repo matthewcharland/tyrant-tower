@@ -1,0 +1,48 @@
+///////////////////////////////
+//        FARMERS RING       //
+//////////////////////////////
+	Farm 1 = 1
+	Farm 2 = 2
+	Farm 3 = 3
+	Farm 4 = 4
+	Farm 5 = 5
+	Farm 6 = 6
+	Pond 1 = 7
+	Pond 2 = 8
+	Pond 3 = 9
+	Windmill 1 = 10
+	Windmill 2 = 11
+	Windmill 3 = 12
+	Dark Forest = 13
+	Gate-1 = 14
+
+
+/////////////////////////////
+//     CRAFTSMAN RING      //
+////////////////////////////
+	Leatherworker 1 = 20
+	Leatherworker 2 = 21
+	Cook 1 = 22
+	Cook 2 = 23
+	Blacksmith 1 = 24
+	Blacksmith 2 = 25
+	Weaver 1 = 26
+	Weaver 2 = 27
+	Gate-2 = 28
+
+////////////////////////////
+//    ELITE CLASS RING    //
+///////////////////////////
+	Rich Family 1 = 30
+	Rich Family 2 = 31
+	Rich Family 3 = 32
+	Rich Family 4 = 33
+	Rich Family 5 = 34
+	Rich Family 6 = 35
+	Gate-3 = 36
+
+//////////////////////////
+//      COURTYARD       //
+/////////////////////////
+	Castle = 40
+
