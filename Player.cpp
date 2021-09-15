@@ -9,7 +9,7 @@ Player::Player()
 	keyAmount = 0;
 	agility = 5;
 	strength = 5;
-
+	defense = 10;
 }
 
 Player::~Player()
