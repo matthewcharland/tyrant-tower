@@ -6,7 +6,13 @@ class Player
 public: 
 	Player();
 	~Player();
-
+	
+	int getHealth();
+	int getAgility();
+	int getStrength();
+	int getKeyAmount();
+	int getMoney();
+	int getDefense();
 
 private:
 	int health;
