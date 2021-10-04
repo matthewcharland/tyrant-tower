@@ -1,3 +1,5 @@
 #pragma once
+#include "Player.h"
 void OpeningScene();
-void ListFourLocations();
+void ListFourLocations(Player maincharicter);
+

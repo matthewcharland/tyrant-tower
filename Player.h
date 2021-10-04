@@ -7,6 +7,15 @@ public:
 	Player();
 	~Player();
 
+	int getHealth();
+	int getAgility();
+	int getStrength();
+	int getKeyAmount();
+	int getMoney();
+	int getDefense();
+
+
+	string location;
 
 private:
 	int health;

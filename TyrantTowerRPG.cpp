@@ -1,19 +1,22 @@
 #include "prototype.h"
+#include "Player.h"
 #include <iostream>
 using namespace std;
 
 int main()
 {
     
-    cout << "Please don't adjust window size." << endl;
     
-    cout << "########################################################################################################################" << endl;
-    cout << "#                                                                                                                      #" << endl;
-    cout << "#   HP:000/100   Gold: 1234    Strength: 10    Item: 00/10                                                             #" << endl;
-    cout << "#   Weapon: ----------------    Agility:  10    Keys: 1 2 3                                                             #" << endl;
-    cout << "#                                                                                                                      #" << endl;
-    cout << "########################################################################################################################" << endl;
-    
-    OpeningScene();
+    Player maincharicter;
 
+    ListFourLocations(maincharicter);
+
+    // OpeningScene();
+
+    cout << endl;
+    cout << "###########################################################" << endl;
+    cout << "  HP: " << maincharicter.getHealth() << "/100   Strength: " << maincharicter.getStrength() << "   Gold: " << maincharicter.getMoney() << endl;
+    cout << "  Defence: " << maincharicter.getDefense() << "   Agility : " << maincharicter.getAgility() << "   Keys: " << maincharicter.getKeyAmount() << endl;
+    cout << "###########################################################" << endl;
 }
+
