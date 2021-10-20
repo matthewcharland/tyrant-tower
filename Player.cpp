@@ -1,8 +1,8 @@
 #include "Player.h"
-#include "prototype.h"
 #include <iostream>
 
 
+//constructer and destructer 
 Player::Player()
 {
 	health = 100;
@@ -11,7 +11,6 @@ Player::Player()
 	agility = 5;
 	strength = 5;
 	defense = 10;
-	location = "farmLocation";
 }
 
 Player::~Player()
@@ -19,8 +18,8 @@ Player::~Player()
 
 }
 
-// functions to get stats
-int Player::getHealth()
+// functions to get values
+int Player::getHealth() 
 {
 	return health;
 }
@@ -48,4 +47,80 @@ int Player::getKeyAmount()
 int Player::getDefense()
 {
 	return defense;
+}
+
+// functions to set value
+
+void Player::setHealth(int healthIn)
+{
+	health = healthIn;
+}
+
+void Player::setAgility(int agilityIn)
+{
+	agility = agilityIn;
+}
+
+void Player::setStrength(int strengthIn)
+{
+	strength = strengthIn;
+}
+
+void Player::setKeyAmount(int keyAmountIn)
+{
+	keyAmount = keyAmountIn;
+}
+
+void Player::setMoney(int moneyIn)
+{
+	money = moneyIn;
+}
+
+void Player::setDefense(int defenseIn)
+{
+	defense = defenseIn;
+}
+
+// Eat functions for food
+
+void Player::eatFood(string foodIn) 
+{
+	switch (foodIn[0])
+	{
+	case 'S': // Steak
+	case 's':
+		if (foodIn[1] == 'T' || foodIn[1] == 't')
+			health = health + 25;
+		else if (foodIn[1] == 'O' || foodIn[1] == 'o') // Soup
+			health += 30;
+		else // Spinach
+			health += 5;
+		break;
+	case 'F': // Fish
+	case 'f':
+		if (foodIn[1] == 'I' || foodIn[1] == 'i')
+			health += 20;
+		break;
+	case 'P': // Pork
+	case 'p':
+		health += 20;
+		break;
+	case 'T': // Tomato
+	case 't':
+		health += 5;
+	case 'C': // Corn
+	case 'c':
+		if (foodIn[1] == 'O' || foodIn[1] == 'o')
+			health += 5;
+		else if (foodIn[1] == 'A' || foodIn[1] == 'a') // Carrot
+			health += 5;
+		else // Chicken
+			health += 25;
+	case 'B': // Bread
+	case 'b':
+		health += 15;
+	default: // Anything not mentioned
+		health += 1;
+		break;
+	}
 }
