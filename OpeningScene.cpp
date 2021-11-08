@@ -1,13 +1,9 @@
 // OpeningScene.cpp
 
 #include <iostream>
-#include <chrono>
-#include <thread>
 
 void OpeningScene() {
 
-	using namespace std::this_thread;
-	using namespace std::chrono;
 	using namespace std;
 	
 		cout << "Once a simple farmer working outside the Kingdom of Lovendale, your \n";
