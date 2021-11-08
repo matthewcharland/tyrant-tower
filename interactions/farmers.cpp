@@ -1,6 +1,6 @@
-// /interactions/farmers/farmer02.cpp
-// Farmer01 Interaction Function
+// farmers.cpp
 // Author: Matthew Charland
+// Farmer01 Interaction Function
 
 #include <iostream>
 
@@ -24,19 +24,13 @@ if (farmer01q01 == 1) {
 
 else if (farmer01q01 == 2) {
 	cout << "Not if I have anything to say about it, peasant!";
+
 // Battle sequence with farmer to be programmed in later.
 }
 
-else {
-return; 
-}
 }
 
-// /interactions/farmers/farmer02.cpp
 // Farmer02 Interaction Function
-// Author: Matthew Charland
-
-#include <iostream>
 
 void farmer02(){
 
@@ -51,22 +45,18 @@ cout << "(3) Walk away like you heard nothing. \n";
 
 cin >> farmer02q02;
 
-
 if (farmer02q02 == 2) {
 	cout << "Death is now yours traitor!";
-// Battle sequence with farmer to be programmed in later.
 
+	// Battle sequence with farmer to be programmed in later.
 }
+
 else {
 	cout << "You are not worth my time peasant, be gone!";
 }
 }
 
-// /interactions/farmers/farmer03.cpp
 // Farmer03 Interaction Function
-// Author: Matthew Charland
-
-#include <iostream>
 
 void farmer03(){
 
@@ -87,10 +77,7 @@ if (farmer03q03 == 1) {
 
 else if (farmer03q03 == 2) {
 	cout << "Leave while you can, peasant!";
-
 }
 
-else {
-return; 
 }
-}
+
