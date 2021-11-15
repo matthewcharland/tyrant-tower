@@ -36,14 +36,7 @@ void BattleSequence(Player maincharicter)
 	int playerHealth;
 	int endBattle = 1;
 
-	/* UNFINISHED
-	*  Attack points is in each attackand the bigger the attack 
-	*  the more points it spends but if you dont have enough points 
-	*  for the attack you cant use that attack.
-	*  
-	*  You ganin a set amount per attack in the loop.
-	*/
-	int attackPoints = 50;
+	
 
 	// text
 	cout << endl << "You have encountered " << TestDummy[0] << "!" << endl;
@@ -51,7 +44,7 @@ void BattleSequence(Player maincharicter)
 
 	while (endBattle == 1)
 	{
-		displayStats(maincharicter.getHealth(), attackPoints, enemyName, enemiesHP);
+		displayStats(maincharicter.getHealth(), enemyName, enemiesHP);
 
 		playerAttackInput = playerAttackChoice();
 
@@ -127,11 +120,11 @@ void BattleSequence(Player maincharicter)
 
 
 // Displayes Current battle stats
-void displayStats(int health, int attackPoints, string enemyName, int enemiesHP)
+void displayStats(int health, string enemyName, int enemiesHP)
 {
 	cout << endl << endl;
 	cout << "Current info:" << endl;
-	cout << "Your stats-  HP: " << health << "/ 100  AP: " << attackPoints << endl;
+	cout << "Your stats-  HP: " << health << "/ 100" << endl;
 	cout << enemyName << " stats-  HP: " << enemiesHP << "/100" << endl;
 	cout << "**************************************" << endl;
 }
