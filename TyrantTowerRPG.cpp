@@ -1,5 +1,3 @@
-// TyrantTowerRPG.cpp
-
 #include "prototype.h"
 #include "Player.h"
 #include <iostream>
@@ -7,13 +5,13 @@ using namespace std;
 
 int main()
 {
-    
-    
+    // OpeningScene();
     Player maincharicter;
 
-    ListFourLocations(maincharicter);
+    BattleSequence(maincharicter);
+    // ListFourLocations(maincharicter);
 
-    // OpeningScene();
+    
 
     cout << endl;
     cout << "###########################################################" << endl;

@@ -10,12 +10,8 @@ extern string craftsmanRing[10];
 extern string eliteClassRing[8];
 extern string castle;
 
-
-
 void ListFourLocations(Player maincharicter)
 {
-    
-
     int random1 = 0;
     int random2 = 0;
     int random3 = 0;
@@ -68,6 +64,5 @@ void ListFourLocations(Player maincharicter)
 
         cout << "1. " << farmerRing[random1] << endl << "2. " << farmerRing[random2] << endl << "3. " << farmerRing[random3] << endl;
     } else {
-
     }
 }
