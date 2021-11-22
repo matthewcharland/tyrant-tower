@@ -9,23 +9,31 @@ string eliteClassRing[8] = { "Rich Family 1", "Rich Family 2", "Rich Family 3", 
 string castle;
 
 
-/* weapon data     
+/* weapon data
+    
     if specialAttack has a 0 it means it has no attack
-      ArrayName    Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack, Attack1Name, Attack2Name, Attack3Name, Attack4Name */
-string Sword[9] = {"Short Sword",       "10",        "15",       "20",         "0",        "stab",     "swipe",   "epic Attack",     " "};
-string crossbow[9];
-string axe[9];
-string sword[9];
-string bow[9];
-string spires[9];
-string clubs[9];
-string pitchfork[9];
-string rusty_trident[9];
-string syth[9];
+    Special attack is not yet implemented into the code. */
+string weaponList[10][9] = {
+               // Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack, Attack1Name, Attack2Name, Attack3Name, Attack4Name
+                  {"Short Sword",       "10",        "15",       "20",         "0",        "Stab",        "Swipe",          "Epic Attack",    " "},
+                  {"Crossbow",          "5",         "10",       "15",         "0",        "cQuickshot",  "cChargedShot",   "epicSShot",      " "},
+                  {"Axe",               "7",         "11",       "17",         "0",        "aSwing",      "chargedASwing",  "epicASwing",     " "},
+                  {"Sword",             "15",	     "20",       "25",	       "0",	       "lSwing",	  "lSwing",	        "epicLSwing",	  " "},
+                  {"Bow",		        "5",	     "10",       "15",	       "0",	       "bQuickshot",  "bChargedShot",	"epicBShot",	  " "},
+                  {"Spear",	            "5",	     "10",       "15",         "0",	       "sLunge",	  "sChargedLunge",  "epicSLunge",     " "},
+                  {"Club",	            "10",	     "12",       "18",         "0",        "cSwing",	  "cChargedSwing",  "epicCSwing",     " "},
+                  {"Pitchfork",	        "7",	     "10",       "12",         "0", 	   "pLunge",	  "pChargedLunge",  "epicPLunge",     " "},
+                  {"Trident",	        "8",	     "11",       "13",         "0",        "tLunge",	  "tChargedLunge",  "epicTLunge",     " "},
+                  {"Scythe",	        "10",        "12",       "16",	       "0",        "sSwoosh",	  "sChargedSwoosh", "epicSSwoosh",    " "}
 
-/* people array list 
-       ArrayName       Name,              WeakAttack, MindAttack2, BigAttack3, Armor, Health */
-string TestDummy[6] = {"TestDummy",       "10",        "20",         "30",      "1",   "100"};
+};
+
+/* people array list */
+string peopleList[2][6] = {
+                   // Name,              WeakAttack, MindAttack2, BigAttack3, Armor, Health
+                      {"TestDummy",        "10",        "20",         "30",      "1",   "100"},
+                      {"TestDummy2",       "10",        "20",         "30",      "1",   "100"}
+}
 
 
 

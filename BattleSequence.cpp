@@ -1,8 +1,3 @@
-/* File Info
-* Known bug: If a wepon dose not have a special move it screws up the thing when you enter 4
-*/
-
-
 #include <iostream>
 #include <time.h>
 #include <chrono>
@@ -14,11 +9,10 @@ using namespace std;
 using namespace std::this_thread; 
 using namespace std::chrono;
 
-/* UNFINISHED
-* needs to pull wepon and person who is fighting data in the game
-*/
-extern string Sword[9];
-extern string TestDummy[6];
+
+extern string peopleList[2][6];
+extern string weaponList[10][9];
+
 
 void BattleSequence(Player maincharicter)
 {
@@ -54,9 +48,6 @@ void BattleSequence(Player maincharicter)
 		else if (playerAttackInput == 2) {
 			playerAttackDamage = stoi(Sword[2]);
 		} 
-		else if (playerAttackInput == 4) {
-			playerAttackDamage = stoi(Sword[4]);
-		}
 		else {
 			playerAttackDamage = stoi(Sword[3]);
 		}
@@ -135,18 +126,17 @@ int playerAttackChoice()
 	int playerAttackInput;
 	do {
 		cout << "What will you do?" << endl;
-		cout << "   1. 20 damage" << endl;
-		cout << "   2. 30 damage" << endl;
-		cout << "   3. 40 damage" << endl;
-		cout << "   4. 50 damage (special weapon attack)" << endl;
+		cout << "   1. " << Sword[5] << ". Damage: " << Sword[1] << endl;
+		cout << "   2. " << Sword[6] << ". Damage: " << Sword[2] << endl;
+		cout << "   3. " << Sword[7] << ". Damage: " << Sword[3] << endl;
 
 		cin >> playerAttackInput;
 
-		if (playerAttackInput < 1 || playerAttackInput > 4)
+		if (playerAttackInput < 1 || playerAttackInput > 3)
 		{
-			cout << "Please enter 1, 2, 3, or 4." << endl;
+			cout << "Please enter 1, 2, or 3." << endl;
 		}
-	} while (playerAttackInput < 1 || playerAttackInput > 4);
+	} while (playerAttackInput < 1 || playerAttackInput > 3);
 
 	return playerAttackInput;
 }

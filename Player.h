@@ -1,14 +1,12 @@
-// Player.h
-
 #pragma once
 #include <string>
 using namespace std;
 class Player
 {
-public: 
+public:
 	Player();
 	~Player();
-	
+
 	int getHealth();
 	int getAgility();
 	int getStrength();
@@ -16,13 +14,15 @@ public:
 	int getMoney();
 	int getDefense();
 
+	string location;
+
 	void setHealth(int healthIn);
 	void setAgility(int agilityIn);
 	void setStrength(int strengthIn);
 	void setKeyAmount(int keyAmountIn);
 	void setMoney(int moneyIn);
 	void setDefense(int defenseIn);
-	
+
 	void eatFood(string foodIn);
 
 private:
@@ -34,7 +34,3 @@ private:
 	int money;
 	int defense;
 };
-
-
-
-
