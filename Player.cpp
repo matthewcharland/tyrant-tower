@@ -5,7 +5,7 @@
 //constructer and destructer 
 Player::Player()
 {
-	health = 100;
+	health = 200;
 	money = 50;
 	keyAmount = 0;
 	agility = 5;
@@ -49,6 +49,25 @@ int Player::getDefense()
 	return defense;
 }
 
+int Player::getWeaponColumn()
+{
+	return weaponCol;
+}
+
+int Player::getWeaponRow()
+{
+	return weaponRow;
+}
+
+int Player::setPeopleColumn()
+{
+	return peopleCol;
+}
+
+int Player::setPeopleRow()
+{
+	return peopleRow;
+}
 // functions to set value
 
 void Player::setHealth(int healthIn)
@@ -81,6 +100,25 @@ void Player::setDefense(int defenseIn)
 	defense = defenseIn;
 }
 
+void Player::setWeaponColumn(int weaponColIn)
+{
+	weaponCol = weaponColIn;
+}
+
+void Player::setWeaponRow(int weaponRowIn)
+{
+	weaponRow = weaponRowIn;
+}
+
+void Player::setPeopleColumn(int peopleColIn)
+{
+	peopleCol = peopleColIn;
+}
+
+void Player::setPeopleRow(int peopleRowIn)
+{
+	peopleRow = peopleRowIn;
+}
 // Eat functions for food
 
 void Player::eatFood(string foodIn) 
@@ -119,6 +157,10 @@ void Player::eatFood(string foodIn)
 	case 'B': // Bread
 	case 'b':
 		health += 15;
+	case 'R': // Rabbit
+	case 'r':
+		health += 5;
+		agility += 10;
 	default: // Anything not mentioned
 		health += 1;
 		break;
