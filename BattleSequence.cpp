@@ -8,21 +8,20 @@
 using namespace std;
 using namespace std::this_thread; 
 using namespace std::chrono;
-
-
 extern string peopleList[2][6];
 extern string weaponList[10][9];
 
-
 void BattleSequence(Player maincharicter)
 {
+	
+	int x = 0;
+	maincharicter.setWeaponRow(x);
+	maincharicter.setPeopleRow(x);
+
 	int playerAttackInput;
 	int playerAttackDamage = 0;
-	
-	int enemiesHP;
-	enemiesHP = stoi(TestDummy[5]);
-	string enemyName = TestDummy[0];
-
+	int enemiesHP = stoi(peopleList[maincharicter.getPeopleRow()][5]);
+	string enemyName = peopleList[maincharicter.getPeopleRow()][0] ;
 	int enimiDamageFinder;
 	int enimeAttack;
 	int enimeDamagetoPlayer;
@@ -30,49 +29,44 @@ void BattleSequence(Player maincharicter)
 	int playerHealth;
 	int endBattle = 1;
 
-	
-
 	// text
-	cout << endl << "You have encountered " << TestDummy[0] << "!" << endl;
+	cout << endl << "You have encountered " << peopleList[maincharicter.getPeopleRow()][0] << "!" << endl;
 	cout << "What will you do?" << endl;
 
 	while (endBattle == 1)
 	{
 		displayStats(maincharicter.getHealth(), enemyName, enemiesHP);
 
-		playerAttackInput = playerAttackChoice();
+		playerAttackInput = playerAttackChoice(maincharicter);
 
 		if (playerAttackInput == 1) {
-			playerAttackDamage = stoi(Sword[1]);
+			playerAttackDamage = stoi(weaponList[maincharicter.getWeaponRow()][1]);
 		}
 		else if (playerAttackInput == 2) {
-			playerAttackDamage = stoi(Sword[2]);
+			playerAttackDamage = stoi(weaponList[maincharicter.getWeaponRow()][2]);
 		} 
 		else {
-			playerAttackDamage = stoi(Sword[3]);
+			playerAttackDamage = stoi(weaponList[maincharicter.getWeaponRow()][3]);
 		}
-
 
 		cout << "You attack " << enemyName << " and did " << playerAttackDamage << " damage!" << endl;
 		sleep_for(15ns);
 		sleep_until(system_clock::now() + 1.5s);
-
-		
 
 		//randomizor
 		srand(time(NULL));
 		enimiDamageFinder = rand() % 6;
 
 		if (enimiDamageFinder == 1 || enimiDamageFinder == 2 || enimiDamageFinder == 3){
-			enimeAttack = stoi(TestDummy[1]);
+			enimeAttack = stoi(peopleList[maincharicter.getPeopleRow()][1]);
 		} else if (enimiDamageFinder == 4 || enimiDamageFinder == 5) {
-			enimeAttack = stoi(TestDummy[2]);
+			enimeAttack = stoi(peopleList[maincharicter.getPeopleRow()][2]);
 		} else {
-			enimeAttack = stoi(TestDummy[3]);
+			enimeAttack = stoi(peopleList[maincharicter.getPeopleRow()][3]);
 		}
 
 		// player attack enimi calculator
-		enimeDefence = stoi(TestDummy[4]);
+		enimeDefence = stoi(peopleList[maincharicter.getPeopleRow()][4]);
 		playerAttackDamage = (playerAttackDamage * playerAttackDamage) / (playerAttackDamage + enimeDefence);
 		enemiesHP = enemiesHP - playerAttackDamage;
 
@@ -81,14 +75,10 @@ void BattleSequence(Player maincharicter)
 		playerHealth = maincharicter.getHealth() - enimeDamagetoPlayer;
 		maincharicter.setHealth(playerHealth);
 
-
-
-
 		// Output dialog
 		cout << enemyName << " attacked back and did " << enimeDamagetoPlayer << "!" << endl;
 		sleep_for(15ns);
 		sleep_until(system_clock::now() + 1.5s);
-
 
 		// battle ending detector
 		if (playerHealth <= 0) {
@@ -121,14 +111,14 @@ void displayStats(int health, string enemyName, int enemiesHP)
 }
 
 // player input Choice 
-int playerAttackChoice()
+int playerAttackChoice(Player maincharicter)
 {
 	int playerAttackInput;
 	do {
 		cout << "What will you do?" << endl;
-		cout << "   1. " << Sword[5] << ". Damage: " << Sword[1] << endl;
-		cout << "   2. " << Sword[6] << ". Damage: " << Sword[2] << endl;
-		cout << "   3. " << Sword[7] << ". Damage: " << Sword[3] << endl;
+		cout << "   1. " << weaponList[maincharicter.getWeaponRow()][5] << ". Damage: " << weaponList[maincharicter.getWeaponRow()][1] << endl;
+		cout << "   2. " << weaponList[maincharicter.getWeaponRow()][6] << ". Damage: " << weaponList[maincharicter.getWeaponRow()][2] << endl;
+		cout << "   3. " << weaponList[maincharicter.getWeaponRow()][7] << ". Damage: " << weaponList[maincharicter.getWeaponRow()][3] << endl;
 
 		cin >> playerAttackInput;
 

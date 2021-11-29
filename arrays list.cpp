@@ -14,7 +14,7 @@ string castle;
     if specialAttack has a 0 it means it has no attack
     Special attack is not yet implemented into the code. */
 string weaponList[10][9] = {
-               // Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack,   Attack1Name, 	Attack2Name, 	  Attack3Name, 	 Attack4Name
+               // Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack, Attack1Name, Attack2Name, Attack3Name, Attack4Name
                   {"Short Sword",       "10",        "15",       "20",         "0",        "Short Stab",    "Swipe",          "Epic Attack", " "},
                   {"Crossbow",          "5",         "10",       "15",         "0",        "Short Shot",    "Charged Shot",   "Epic Shot",   " "},
                   {"Axe",               "7",         "11",       "17",         "0",        "Short Swing",   "Charged Swing",  "Epic Swing",  " "},
@@ -28,12 +28,12 @@ string weaponList[10][9] = {
 
 };
 
-/* people array list */
+// people array list 
 string peopleList[2][6] = {
-                   // Name,              WeakAttack, MindAttack2, BigAttack3, Armor, Health
-                      {"TestDummy",        "10",        "20",         "30",      "1",   "100"},
-                      {"TestDummy2",       "10",        "20",         "30",      "1",   "100"}
-}
+    // Name,              WeakAttack, MindAttack2, BigAttack3, Armor, Health
+       {"TestDummy",        "10",        "20",         "30",      "1",   "100"},
+       {"TestDummy2",       "10",        "20",         "30",      "1",   "100"}
+};
 
 
 

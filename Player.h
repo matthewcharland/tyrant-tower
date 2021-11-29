@@ -26,8 +26,10 @@ public:
 	int getWeaponColumn();
 	int getWeaponRow();
 
+	string location;
+
 	void setWeaponColumn(int weaponColIn);
-	void setWeaponRow(int weaponRowIn)
+	void setWeaponRow(int weaponRowIn);
 
 	int getPeopleColumn();
 	int getPeopleRow();

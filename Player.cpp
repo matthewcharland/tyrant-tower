@@ -59,12 +59,13 @@ int Player::getWeaponRow()
 	return weaponRow;
 }
 
-int Player::setPeopleColumn()
+int Player::getPeopleColumn()
 {
+
 	return peopleCol;
 }
 
-int Player::setPeopleRow()
+int Player::getPeopleRow()
 {
 	return peopleRow;
 }
