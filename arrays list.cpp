@@ -14,17 +14,17 @@ string castle;
     if specialAttack has a 0 it means it has no attack
     Special attack is not yet implemented into the code. */
 string weaponList[10][9] = {
-               // Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack, Attack1Name, Attack2Name, Attack3Name, Attack4Name
-                  {"Short Sword",       "10",        "15",       "20",         "0",        "Stab",        "Swipe",          "Epic Attack",    " "},
-                  {"Crossbow",          "5",         "10",       "15",         "0",        "cQuickshot",  "cChargedShot",   "epicSShot",      " "},
-                  {"Axe",               "7",         "11",       "17",         "0",        "aSwing",      "chargedASwing",  "epicASwing",     " "},
-                  {"Sword",             "15",	     "20",       "25",	       "0",	       "lSwing",	  "lSwing",	        "epicLSwing",	  " "},
-                  {"Bow",		        "5",	     "10",       "15",	       "0",	       "bQuickshot",  "bChargedShot",	"epicBShot",	  " "},
-                  {"Spear",	            "5",	     "10",       "15",         "0",	       "sLunge",	  "sChargedLunge",  "epicSLunge",     " "},
-                  {"Club",	            "10",	     "12",       "18",         "0",        "cSwing",	  "cChargedSwing",  "epicCSwing",     " "},
-                  {"Pitchfork",	        "7",	     "10",       "12",         "0", 	   "pLunge",	  "pChargedLunge",  "epicPLunge",     " "},
-                  {"Trident",	        "8",	     "11",       "13",         "0",        "tLunge",	  "tChargedLunge",  "epicTLunge",     " "},
-                  {"Scythe",	        "10",        "12",       "16",	       "0",        "sSwoosh",	  "sChargedSwoosh", "epicSSwoosh",    " "}
+               // Name,              WeakAttack, MindAttack2, BigAttack3, SpecialAttack,   Attack1Name, 	Attack2Name, 	  Attack3Name, 	 Attack4Name
+                  {"Short Sword",       "10",        "15",       "20",         "0",        "Short Stab",    "Swipe",          "Epic Attack", " "},
+                  {"Crossbow",          "5",         "10",       "15",         "0",        "Short Shot",    "Charged Shot",   "Epic Shot",   " "},
+                  {"Axe",               "7",         "11",       "17",         "0",        "Short Swing",   "Charged Swing",  "Epic Swing",  " "},
+                  {"Sword",             "15",	     "20",       "25",	       "0",	       "Short Swing",   "Long Swing",	  "Epic Swing",	 " "},
+                  {"Bow",		        "5",	     "10",       "15",	       "0",	       "Quickshot",     "Charged Shot",	  "Epic Shot",	 " "},
+                  {"Spear",	            "5",	     "10",       "15",         "0",	       "Short Lunge",	"Charged Lunge",  "Epic Lunge",  " "},
+                  {"Club",	            "10",	     "12",       "18",         "0",        "Short Swing",	"Charged Swing",  "Epic Swing",  " "},
+                  {"Pitchfork",	        "7",	     "10",       "12",         "0", 	   "Short Lunge",	"Charged Lunge",  "Epic Lunge",  " "},
+                  {"Trident",	        "8",	     "11",       "13",         "0",        "Short Lunge",	"Charged Lunge",  "Epic Lunge",  " "},
+                  {"Scythe",	        "10",        "12",       "16",	       "0",        "Short Swoosh",	"Charged Swoosh", "Epic Swoosh", " "}
 
 };
 
