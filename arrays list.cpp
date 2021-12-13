@@ -1,3 +1,9 @@
+/* File Name:       arrays list.cpp
+Made By:            Collin Frommelt
+What dose it do:    Stores data in arrays for the game.
+date:               12/13/2021
+*/
+
 #include <string>
 
 using namespace std;

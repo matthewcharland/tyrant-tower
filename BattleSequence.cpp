@@ -1,3 +1,11 @@
+/* File Name:			BattleSequence.cpp
+Made By:				Collin Frommelt
+What dose it do:		Enables the battle Sequence for combat with the player and enimie.
+how it works:			You get 3 options to attack the enimie and once you chose one the enimi will fight back after that.
+						it repeats till the player or enimie reaches 0 Hp. then exits the battle.
+date:				    12/13/2021
+*/
+
 #include <iostream>
 #include <time.h>
 #include <chrono>

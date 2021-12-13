@@ -1,3 +1,11 @@
+/* File Name:       Travel.cpp
+Made By:            Collin Frommelt
+What dose it do:    lets the player travel to diffrent locations.
+how it works:       Lets the player chose from 3 random areas and one can be a gate.
+                    And the gate give a new pool of locations to chose from.
+date:               12/13/2021
+*/
+
 #include <iostream>
 #include <time.h>
 #include "Player.h"

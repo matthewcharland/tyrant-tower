@@ -1,3 +1,8 @@
+/* File Name:            TyrantTowerRPG.cpp
+Made By:                 Collin Frommelt
+What dose it do:         Main function for the game
+date:                    12/13/2021
+*/
 #include "prototype.h"
 #include "Player.h"
 #include <iostream>
@@ -5,11 +10,11 @@ using namespace std;
 
 int main()
 {
-    // OpeningScene();
+    OpeningScene();
     Player maincharicter;
 
     BattleSequence(maincharicter);
-    // ListFourLocations(maincharicter);
+    ListFourLocations(maincharicter);
 
     
 
