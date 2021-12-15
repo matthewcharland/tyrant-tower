@@ -3,15 +3,19 @@
 
 
 //constructer and destructer 
+//worked on by Spencer Hess
 Player::Player()
 {
-	health = 200;
-	money = 50;
-	keyAmount = 0;
-	agility = 5;
-	strength = 5;
-	defense = 10;
+	health = 200; // Starting player health
+	money = 50; // Starting money
+	keyAmount = 0; // Starting key amount (Keys are for unlocking gates)
+	agility = 5; // Starting agility amount
+	strength = 5; // Starting strength amount
+	defense = 10; // Starting defense amount 
 }
+// Agility determines chance to dodge/block/parry an attack
+// Strength determines bonus damage on melee weapons
+// Defense is the amount of damage that is reduced from hits
 
 Player::~Player()
 {
@@ -19,6 +23,7 @@ Player::~Player()
 }
 
 // functions to get values
+// worked on by Spencer Hess
 int Player::getHealth() 
 {
 	return health;
@@ -61,7 +66,6 @@ int Player::getWeaponRow()
 
 int Player::getPeopleColumn()
 {
-
 	return peopleCol;
 }
 
@@ -69,7 +73,9 @@ int Player::getPeopleRow()
 {
 	return peopleRow;
 }
+
 // functions to set value
+// worked on by Spencer Hess
 
 void Player::setHealth(int healthIn)
 {
@@ -121,6 +127,10 @@ void Player::setPeopleRow(int peopleRowIn)
 	peopleRow = peopleRowIn;
 }
 // Eat functions for food
+// Worked on by Spencer Hess
+
+// The function will determine what food you're eating depending how what letters you use
+// each food has different heal amounts, can add food that increases agility/defense
 
 void Player::eatFood(string foodIn) 
 {
