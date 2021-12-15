@@ -28,6 +28,9 @@ public:
 	void eatFood(string foodIn);
 	void startRun(string runIn);
 
+	// String to keep track of locations
+	string location;
+
 	// Functions to get Weapon Column and Row for another file
 	int getWeaponColumn();
 	int getWeaponRow();
